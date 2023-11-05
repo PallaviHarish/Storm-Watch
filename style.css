@@ -21,7 +21,7 @@ body{
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-    box-shadow: 1px 1px 1px 1px rgb(151, 167, 236);
+/*     box-shadow: 1px 1px 1px 1px rgb(151, 167, 236); */
 }
 .search{
     width: 100%;
