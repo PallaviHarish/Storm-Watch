@@ -21,13 +21,14 @@ body{
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-/*     box-shadow: 1px 1px 1px 1px rgb(151, 167, 236); */
+    box-shadow: 1px 1px 1px 1px rgb(151, 167, 236);
 }
 .search{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: wrap;
 }
 .search input{
     border: 0;
@@ -87,8 +88,10 @@ body{
 }
 .details{
     display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
     align-items: center;
-    justify-content: space-between;
     padding: 0 20px;
     margin-top: 50px;
 }
@@ -114,4 +117,27 @@ body{
     font-size: 14px;
     margin-top: 10px;
     display: none;
+}
+@media  screen and (max-width:500px) {
+    body{
+        background: #fff;
+    }
+    .search input{
+        height: 45px;
+    }
+    .search button{
+        background: none;
+    }
+    .search button:hover{
+        background: none;
+
+    }
+    .search button img{
+        width: 25px;
+    }
+}
+@media  screen and (max-width:1278px) {
+    body{
+        background: #2f2e2e;
+    }
 }
